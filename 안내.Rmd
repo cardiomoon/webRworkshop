@@ -1,12 +1,22 @@
-# 제 4회 웹에서 하는 R통계 워크샵 자료집
-
-### 일시: 2017년 8월 26일
-
-### 강의: 문건웅(cardiomoon@gmail.com) 
-
-### 내용: 
-
 ---
+title: "웹R 워크샵 안내"
+author: "문 건 웅"
+date: "2017년 8월 26일"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(echo = TRUE,comment=NA, message=FALSE, warning=FALSE,
+                      fig.asp=0.618, fig.align="center")
+```
 
 # 워크샵 자료 다운로드
 
@@ -14,7 +24,6 @@ https://github.com/cardiomoon/webRworkshop
  
 
 ---
-
 # 강의순서
 
 시간  | 내용
@@ -28,7 +37,6 @@ https://github.com/cardiomoon/webRworkshop
 16:00 - 17:00  | 재현가능한 연구
 
 ---
-
 # 틀리지 않는 법
 
 1.틀리지않는법.pptx
@@ -37,7 +45,7 @@ https://github.com/cardiomoon/webRworkshop
 
 # 웹에서 하는 R 통계
 
-chrome, firefox, opera, safari 등을 사용하여 웹에서 하는 R통계 강의용 서버 접속
+chrome, firefox, opera, safari 등을 사용하여 웹에서 하는 R통계 접속주소
 
 왼쪽 |가운데 |오른쪽
 -----|-------|------
@@ -74,7 +82,6 @@ devtools::install_github("cardiomoon/workshop")
 - R 소스파일: 2.데이터변형.R
 
 ---
-
 # 데이터 다듬기
 
 - 사용파일: 3.데이터만들기.html
@@ -82,7 +89,6 @@ devtools::install_github("cardiomoon/workshop")
 - R 소스파일: 3.데이터만들기.R
 
 ---
-
 # 관계형 데이터
 
 ```{r,eval=FALSE}
@@ -91,7 +97,6 @@ learnr::run_tutorial("relationalData",package="workshop")
 
 
 ---
-
 # 재현가능한 연구
 
 - 사용파일: 5.재현가능한 연구.html

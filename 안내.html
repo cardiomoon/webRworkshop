@@ -1,12 +1,24 @@
-# 제 4회 웹에서 하는 R통계 워크샵 자료집
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>웹R 워크샵 안내</title>
+    <meta charset="utf-8">
+    <meta name="author" content="문 건 웅" />
+    <link href="libs/remark-css/example.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
 
-### 일시: 2017년 8월 26일
-
-### 강의: 문건웅(cardiomoon@gmail.com) 
-
-### 내용: 
+# 웹R 워크샵 안내
+### 문 건 웅
+### 2017년 8월 26일
 
 ---
+
+
+
+
 
 # 워크샵 자료 다운로드
 
@@ -14,7 +26,6 @@ https://github.com/cardiomoon/webRworkshop
  
 
 ---
-
 # 강의순서
 
 시간  | 내용
@@ -28,7 +39,6 @@ https://github.com/cardiomoon/webRworkshop
 16:00 - 17:00  | 재현가능한 연구
 
 ---
-
 # 틀리지 않는 법
 
 1.틀리지않는법.pptx
@@ -37,7 +47,7 @@ https://github.com/cardiomoon/webRworkshop
 
 # 웹에서 하는 R 통계
 
-chrome, firefox, opera, safari 등을 사용하여 웹에서 하는 R통계 강의용 서버 접속
+chrome, firefox, opera, safari 등을 사용하여 웹에서 하는 R통계 접속주소
 
 왼쪽 |가운데 |오른쪽
 -----|-------|------
@@ -60,7 +70,8 @@ chrome, firefox, opera, safari 등을 사용하여 웹에서 하는 R통계 강�
 
 - 패키지설치 : RStudio에서 다음 패키지 설치
 
-```{r,eval=FALSE}
+
+```r
 install.packages(c("knitr","tidyverse","learnr","nycflights13"))
 install.packages("devtools")
 devtools::install_github("cardiomoon/workshop")
@@ -74,7 +85,6 @@ devtools::install_github("cardiomoon/workshop")
 - R 소스파일: 2.데이터변형.R
 
 ---
-
 # 데이터 다듬기
 
 - 사용파일: 3.데이터만들기.html
@@ -82,19 +92,46 @@ devtools::install_github("cardiomoon/workshop")
 - R 소스파일: 3.데이터만들기.R
 
 ---
-
 # 관계형 데이터
 
-```{r,eval=FALSE}
+
+```r
 learnr::run_tutorial("relationalData",package="workshop")
 ```
 
 
 ---
-
 # 재현가능한 연구
 
 - 사용파일: 5.재현가능한 연구.html
 
 - R 소스파일: 재현가능한 연구.R
+    </textarea>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {window.dispatchEvent(new Event('resize'));});</script>
 
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+  }
+});
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
