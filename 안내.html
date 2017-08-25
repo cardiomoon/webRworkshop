@@ -72,7 +72,7 @@ chrome, firefox, opera, safari 등을 사용하여 웹에서 하는 R통계 접�
 
 
 ```r
-install.packages(c("knitr","tidyverse","learnr","nycflights13"))
+install.packages(c("knitr","tidyverse","learnr","rmarkdown","nycflights13"))
 install.packages("devtools")
 devtools::install_github("cardiomoon/workshop")
 ```
@@ -80,14 +80,10 @@ devtools::install_github("cardiomoon/workshop")
 
 # 데이터 변형
 
-- 사용파일: 2.데이터변형.html
-
 - R 소스파일: 2.데이터변형.R
 
 ---
 # 데이터 다듬기
-
-- 사용파일: 3.데이터만들기.html
 
 - R 소스파일: 3.데이터만들기.R
 
@@ -103,9 +99,7 @@ learnr::run_tutorial("relationalData",package="workshop")
 ---
 # 재현가능한 연구
 
-- 사용파일: 5.재현가능한 연구.html
-
-- R 소스파일: 재현가능한 연구.R
+- 5.재현가능한연구.Rmd
     </textarea>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
 <script>var slideshow = remark.create({
@@ -113,7 +107,8 @@ learnr::run_tutorial("relationalData",package="workshop")
 "highlightLines": true,
 "countIncrementalSlides": false
 });
-if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {window.dispatchEvent(new Event('resize'));});</script>
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {window.dispatchEvent(new Event('resize'));});
+(function() {var d = document, s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler"); if (!r) return; s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }"; d.head.appendChild(s);})();</script>
 
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({

@@ -61,7 +61,7 @@ chrome, firefox, opera, safari 등을 사용하여 웹에서 하는 R통계 강�
 - 패키지설치 : RStudio에서 다음 패키지 설치
 
 ```{r,eval=FALSE}
-install.packages(c("knitr","tidyverse","learnr","nycflights13"))
+install.packages(c("knitr","tidyverse","learnr","rmarkdown","nycflights13"))
 install.packages("devtools")
 devtools::install_github("cardiomoon/workshop")
 ```
@@ -69,15 +69,11 @@ devtools::install_github("cardiomoon/workshop")
 
 # 데이터 변형
 
-- 사용파일: 2.데이터변형.html
-
 - R 소스파일: 2.데이터변형.R
 
 ---
 
 # 데이터 다듬기
-
-- 사용파일: 3.데이터만들기.html
 
 - R 소스파일: 3.데이터만들기.R
 
@@ -94,7 +90,7 @@ learnr::run_tutorial("relationalData",package="workshop")
 
 # 재현가능한 연구
 
-- 사용파일: 5.재현가능한 연구.html
 
-- R 소스파일: 재현가능한 연구.R
+
+- 5.재현가능한 연구.Rmd
 
