@@ -128,7 +128,7 @@ arrange(df, desc(x))
 arrange(df, desc(x))
 
 ## ----eval=FALSE----------------------------------------------------------
-## arrange(flights, desc(arr_delay))
+## arrange(flights, !is.na(x),desc(arr_delay))
 
 ## ----eval=FALSE----------------------------------------------------------
 ## arrange(flights,desc(distance/air_time))
