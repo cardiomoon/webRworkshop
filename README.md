@@ -10,9 +10,11 @@
 
 # 워크샵 자료 다운로드
 
-https://github.com/cardiomoon/webRworkshop
- 
+- https://github.com/cardiomoon/webRworkshop
 
+- http://web-r.org/board_WDJQ50
+
+둘중 아무 곳에서나 받으시면 됩니다.
 ---
 
 # 강의순서
@@ -41,7 +43,7 @@ chrome, firefox, opera, safari 등을 사용하여 웹에서 하는 R통계 강�
 
 왼쪽 |가운데 |오른쪽
 -----|-------|------
-[R통계3.0](http://172.104.89.167:3838/betam3)|[R통계3.0](http://172.104.109.33:3838/betam3)|[R통계3.0](http://172.104.122.54:3838/betam3)
+[R통계3.1](http://172.104.89.167:3838/betam3)|[R통계3.1](http://172.104.109.33:3838/betam3)|[R통계3.1](http://172.104.122.54:3838/betam3)
 172.104.89.167:3838/betam3 | 172.104.109.33:3838/betam3 |172.104.122.54:3838/betam3 
 
 ---
@@ -61,8 +63,8 @@ chrome, firefox, opera, safari 등을 사용하여 웹에서 하는 R통계 강�
 - 패키지설치 : RStudio에서 다음 패키지 설치
 
 ```{r,eval=FALSE}
-install.packages(c("knitr","tidyverse","learnr","rmarkdown","nycflights13"))
-install.packages("devtools")
+install.packages(c("knitr","tidyverse","learnr","rmarkdown"))
+install.packages(c("devtools","nycflights13"))
 devtools::install_github("cardiomoon/workshop")
 ```
 ---

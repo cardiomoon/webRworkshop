@@ -22,7 +22,12 @@ class: center, middle, inverse, title-slide
 
 # 워크샵 자료 다운로드
 
-https://github.com/cardiomoon/webRworkshop
+- https://github.com/cardiomoon/webRworkshop
+
+또는
+
+- http://web-r.org/board_WDJQ50
+
  
 
 ---
@@ -51,7 +56,7 @@ chrome, firefox, opera, safari 등을 사용하여 웹에서 하는 R통계 접�
 
 왼쪽 |가운데 |오른쪽
 -----|-------|------
-[R통계3.0](http://172.104.89.167:3838/betam3)|[R통계3.0](http://172.104.109.33:3838/betam3)|[R통계3.0](http://172.104.122.54:3838/betam3)
+[R통계3.1](http://172.104.89.167:3838/betam3)|[R통계3.1](http://172.104.109.33:3838/betam3)|[R통계3.1](http://172.104.122.54:3838/betam3)
 172.104.89.167:3838/betam3 | 172.104.109.33:3838/betam3 |172.104.122.54:3838/betam3 
 
 ---
@@ -72,8 +77,8 @@ chrome, firefox, opera, safari 등을 사용하여 웹에서 하는 R통계 접�
 
 
 ```r
-install.packages(c("knitr","tidyverse","learnr","rmarkdown","nycflights13"))
-install.packages("devtools")
+install.packages(c("knitr","tidyverse","learnr","rmarkdown"))
+install.packages(c("devtools","nycflights13"))
 devtools::install_github("cardiomoon/workshop")
 ```
 ---
@@ -85,7 +90,7 @@ devtools::install_github("cardiomoon/workshop")
 ---
 # 데이터 다듬기
 
-- R 소스파일: 3.데이터만들기.R
+- R 소스파일: 3.데이터다듬기.R
 
 ---
 # 관계형 데이터
@@ -98,6 +103,8 @@ learnr::run_tutorial("relationalData",package="workshop")
 
 ---
 # 재현가능한 연구
+
+- 5.재현가능한연구.html
 
 - 5.재현가능한연구.Rmd
     </textarea>
